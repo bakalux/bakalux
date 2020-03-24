@@ -1,0 +1,4 @@
+<div class="container mt-5">
+    <input (keyup)="keyword$.next($event.target.value)" class="form-control" placeholder="Search for repos">
+    <repo-list [results]="results$ | async" [hasMadeSearch]="hasMadeSearch$ | async"></repo-list>
+</div>

@@ -1,0 +1,7 @@
+<div class="card mt-1 p-1" *ngFor="let item of repos">
+    {{item.name}} has {{item.stargazers_count}} stars
+</div>
+
+<div *ngIf="isNothingFound">
+    Nothing Found
+</div>
